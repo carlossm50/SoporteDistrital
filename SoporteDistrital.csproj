@@ -1,0 +1,232 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A4C6FAF6-3C59-4B34-9772-65D2302C5B70}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SoporteDistrital</RootNamespace>
+    <AssemblyName>SoporteDistrital</AssemblyName>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <ApplicationIcon>imajenes\dt_lite.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <ApplicationIcon>..\Users\dell\Desktop\dt_lite.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Clases\CentroEducativo.cs" />
+    <Compile Include="Clases\Distrito.cs" />
+    <Compile Include="Clases\Docente.cs" />
+    <Compile Include="Clases\Empleado.cs" />
+    <Compile Include="Clases\Historial.cs" />
+    <Compile Include="Clases\PermisosUsu.cs" />
+    <Compile Include="Clases\Regional.cs" />
+    <Compile Include="Clases\Tarjetas.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsigTarjApoyo.cs" />
+    <Compile Include="FrmAsigTarjApoyo.Designer.cs">
+      <DependentUpon>FrmAsigTarjApoyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaCentro.cs" />
+    <Compile Include="FrmBuscaCentro.Designer.cs">
+      <DependentUpon>FrmBuscaCentro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaDistrito.cs" />
+    <Compile Include="FrmBuscaDistrito.Designer.cs">
+      <DependentUpon>FrmBuscaDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaEmpleado.cs" />
+    <Compile Include="FrmBuscaEmpleado.Designer.cs">
+      <DependentUpon>FrmBuscaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaRegional.cs" />
+    <Compile Include="FrmBuscaRegional.Designer.cs">
+      <DependentUpon>FrmBuscaRegional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaTarjeta.cs" />
+    <Compile Include="FrmBuscaTarjeta.Designer.cs">
+      <DependentUpon>FrmBuscaTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiaContr.cs" />
+    <Compile Include="FrmCambiaContr.Designer.cs">
+      <DependentUpon>FrmCambiaContr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmcConsultaPorCargo.cs" />
+    <Compile Include="FrmcConsultaPorCargo.Designer.cs">
+      <DependentUpon>FrmcConsultaPorCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCentroEd.cs" />
+    <Compile Include="FrmCentroEd.Designer.cs">
+      <DependentUpon>FrmCentroEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCertificacion.cs" />
+    <Compile Include="FrmCertificacion.Designer.cs">
+      <DependentUpon>FrmCertificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConectar.cs" />
+    <Compile Include="FrmConectar.Designer.cs">
+      <DependentUpon>FrmConectar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaCentroEd.cs" />
+    <Compile Include="FrmConsultaCentroEd.Designer.cs">
+      <DependentUpon>FrmConsultaCentroEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaPersArea.cs" />
+    <Compile Include="FrmConsultaPersArea.Designer.cs">
+      <DependentUpon>FrmConsultaPersArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaPersonal.cs" />
+    <Compile Include="FrmConsultaPersonal.Designer.cs">
+      <DependentUpon>FrmConsultaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDistrito.cs" />
+    <Compile Include="FrmDistrito.Designer.cs">
+      <DependentUpon>FrmDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiberarTarj1.cs" />
+    <Compile Include="FrmLiberarTarj1.Designer.cs">
+      <DependentUpon>FrmLiberarTarj1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoEmpleado.cs" />
+    <Compile Include="FrmNuevoEmpleado.Designer.cs">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegional.cs" />
+    <Compile Include="FrmRegional.Designer.cs">
+      <DependentUpon>FrmRegional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteCentro.cs" />
+    <Compile Include="FrmReporteCentro.Designer.cs">
+      <DependentUpon>FrmReporteCentro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTarjeta.cs" />
+    <Compile Include="FrmTarjeta.Designer.cs">
+      <DependentUpon>FrmTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTecnicoDocente.cs" />
+    <Compile Include="FrmTecnicoDocente.Designer.cs">
+      <DependentUpon>FrmTecnicoDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.cs" />
+    <Compile Include="FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.cs" />
+    <Compile Include="OtrosFormatos.cs" />
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsigTarjApoyo.resx">
+      <DependentUpon>FrmAsigTarjApoyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaCentro.resx">
+      <DependentUpon>FrmBuscaCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaDistrito.resx">
+      <DependentUpon>FrmBuscaDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaEmpleado.resx">
+      <DependentUpon>FrmBuscaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaRegional.resx">
+      <DependentUpon>FrmBuscaRegional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaTarjeta.resx">
+      <DependentUpon>FrmBuscaTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiaContr.resx">
+      <DependentUpon>FrmCambiaContr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmcConsultaPorCargo.resx">
+      <DependentUpon>FrmcConsultaPorCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCentroEd.resx">
+      <DependentUpon>FrmCentroEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCertificacion.resx">
+      <DependentUpon>FrmCertificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConectar.resx">
+      <DependentUpon>FrmConectar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaCentroEd.resx">
+      <DependentUpon>FrmConsultaCentroEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaPersArea.resx">
+      <DependentUpon>FrmConsultaPersArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaPersonal.resx">
+      <DependentUpon>FrmConsultaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDistrito.resx">
+      <DependentUpon>FrmDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiberarTarj1.resx">
+      <DependentUpon>FrmLiberarTarj1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoEmpleado.resx">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegional.resx">
+      <DependentUpon>FrmRegional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteCentro.resx">
+      <DependentUpon>FrmReporteCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTarjeta.resx">
+      <DependentUpon>FrmTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTecnicoDocente.resx">
+      <DependentUpon>FrmTecnicoDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Reportes\RPTpersonalG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases" />
+    <Folder Include="Reportes" />
+  </ItemGroup>
+</Project>

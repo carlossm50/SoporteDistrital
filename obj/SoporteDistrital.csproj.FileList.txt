@@ -1,0 +1,15 @@
+bin\Debug\SoporteDistrital.exe
+bin\Debug\SoporteDistrital.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SoporteDistrital.MainForm.resources
+obj\Debug\SoporteDistrital.csproj.GenerateResource.Cache
+obj\Debug\SoporteDistrital.exe
+obj\Debug\SoporteDistrital.pdb
+obj\Debug\SoporteDistrital.FrmNuevoEmpleado.resources
+obj\Debug\SoporteDistrital.FrmRegional.resources
+obj\Debug\SoporteDistrital.FrmDistrito.resources
+obj\Debug\SoporteDistrital.FrmBuscaRegional.resources
+obj\Debug\SoporteDistrital.FrmCentroEd.resources
+obj\Debug\SoporteDistrital.FrmBuscaDistrito.resources
+obj\Debug\SoporteDistrital.FrmTarjeta.resources
+obj\Debug\SoporteDistrital.FrmBuscaCentro.resources

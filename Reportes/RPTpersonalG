@@ -1,0 +1,123 @@
+﻿<ReportModel>
+  <ReportSettings>
+    <ReportSettings>
+      <ReportName>RPTpersonalG1</ReportName>
+      <ReportType>FormSheet</ReportType>
+      <UseStandardPrinter>True</UseStandardPrinter>
+      <DefaultMargins>50, 50, 50, 50</DefaultMargins>
+      <GraphicsUnit>Millimeter</GraphicsUnit>
+      <GridSize>8, 8</GridSize>
+      <Padding>5, 5, 5, 5</Padding>
+      <AvailableFieldsCollection />
+      <SortColumnCollection />
+      <GroupColumnsCollection />
+      <ConnectionString />
+      <!--System.ArgumentException: El valor '0' no es un valor válido para 'CommandType' enum.
+   en System.ComponentModel.EnumConverter.ConvertTo(ITypeDescriptorContext context, CultureInfo culture, Object value, Type destinationType)
+   en System.ComponentModel.TypeConverter.ConvertToString(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   en System.ComponentModel.TypeConverter.ConvertToInvariantString(Object value)
+   en ICSharpCode.Reports.Core.MycroWriter.Save(Object obj, XmlWriter writer)-->
+      <DataModel>FormSheet</DataModel>
+      <NoDataMessage>No Data for this Report</NoDataMessage>
+      <DefaultFont>Microsoft Sans Serif, 10pt</DefaultFont>
+    </ReportSettings>
+  </ReportSettings>
+  <SectionCollection>
+    <BaseSection>
+      <BackColor>Window</BackColor>
+      <Size>826, 50</Size>
+      <CanGrow>False</CanGrow>
+      <CanShrink>False</CanShrink>
+      <SectionMargin>50</SectionMargin>
+      <Items>
+        <BaseTextItem>
+          <Name>reportTextItem1</Name>
+          <Location>12, 18</Location>
+          <Size>100, 20</Size>
+          <Font>Microsoft Sans Serif, 10pt</Font>
+          <Text>Empresa</Text>
+          <FormatString />
+          <StringTrimming>EllipsisCharacter</StringTrimming>
+          <ContentAlignment>MiddleLeft</ContentAlignment>
+          <DrawBorder>False</DrawBorder>
+          <ForeColor>ControlText</ForeColor>
+          <Visible>True</Visible>
+          <BackColor>White</BackColor>
+        </BaseTextItem>
+        <BaseRowItem>
+          <Name>reportRowItem1</Name>
+          <Size>210, 30</Size>
+          <Location>150, 19</Location>
+          <Font>Microsoft Sans Serif, 10pt</Font>
+          <AlternateBackColor />
+          <ChangeBackColorEveryNRow>0</ChangeBackColorEveryNRow>
+          <Padding>5, 5, 5, 5</Padding>
+          <Items />
+          <DrawBorder>False</DrawBorder>
+          <ForeColor>ControlText</ForeColor>
+          <Visible>True</Visible>
+          <BackColor>White</BackColor>
+        </BaseRowItem>
+      </Items>
+      <PageBreakAfter>False</PageBreakAfter>
+      <Name>ReportHeader</Name>
+    </BaseSection>
+    <BaseSection>
+      <BackColor>Window</BackColor>
+      <Size>826, 50</Size>
+      <CanGrow>False</CanGrow>
+      <CanShrink>False</CanShrink>
+      <SectionMargin>50</SectionMargin>
+      <Items>
+        <BaseDataItem>
+          <Name>reportDataItem1</Name>
+          <Size>100, 20</Size>
+          <Location>16, 11</Location>
+          <Font>Microsoft Sans Serif, 10pt</Font>
+          <Text>Nada</Text>
+          <ColumnName>Nada</ColumnName>
+          <DataType>System.String</DataType>
+          <FormatString />
+          <StringTrimming>EllipsisCharacter</StringTrimming>
+          <ContentAlignment>MiddleLeft</ContentAlignment>
+          <DrawBorder>False</DrawBorder>
+          <ForeColor>ControlText</ForeColor>
+          <Visible>True</Visible>
+          <BackColor>White</BackColor>
+        </BaseDataItem>
+      </Items>
+      <PageBreakAfter>False</PageBreakAfter>
+      <Name>ReportPageHeader</Name>
+    </BaseSection>
+    <BaseSection>
+      <BackColor>Window</BackColor>
+      <Size>826, 50</Size>
+      <CanGrow>False</CanGrow>
+      <CanShrink>False</CanShrink>
+      <SectionMargin>50</SectionMargin>
+      <Items />
+      <PageBreakAfter>False</PageBreakAfter>
+      <Name>ReportDetail</Name>
+    </BaseSection>
+    <BaseSection>
+      <BackColor>Window</BackColor>
+      <Size>826, 50</Size>
+      <CanGrow>False</CanGrow>
+      <CanShrink>False</CanShrink>
+      <SectionMargin>50</SectionMargin>
+      <Items />
+      <PageBreakAfter>False</PageBreakAfter>
+      <Name>ReportPageFooter</Name>
+    </BaseSection>
+    <BaseSection>
+      <BackColor>Window</BackColor>
+      <Size>826, 50</Size>
+      <CanGrow>False</CanGrow>
+      <CanShrink>False</CanShrink>
+      <SectionMargin>50</SectionMargin>
+      <Items />
+      <PageBreakAfter>False</PageBreakAfter>
+      <Name>ReportFooter</Name>
+    </BaseSection>
+  </SectionCollection>
+</ReportModel>
